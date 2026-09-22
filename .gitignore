@@ -4,3 +4,4 @@ praktikum/__pycache__
 htmlcov
 .coverage
 .pytest_cache
+pytest-cov
