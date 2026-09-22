@@ -1,1 +1,0 @@
-{"uuid": "9e128f4c-1fa8-43b4-a69d-3ba966d7710d", "children": ["875223b1-bd49-4a8c-8c4f-47462fcd919e"], "befores": [{"name": "mock_ingredient_negative_price", "status": "passed", "start": 1790077434784, "stop": 1790077434784}], "afters": [{"name": "mock_ingredient_negative_price::<lambda>", "start": 1790077434786}], "start": 1790077434784, "stop": 1790077434786}
