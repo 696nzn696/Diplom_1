@@ -1,0 +1,1 @@
+{"uuid": "d1e010c6-fe7f-4468-9127-0b8932dfe318", "children": ["9a8a0c85-78bb-4de8-bcca-b502c2469a1a"], "befores": [{"name": "mock_ingredient_empty_name", "status": "passed", "start": 1790077434774, "stop": 1790077434774}], "afters": [{"name": "mock_ingredient_empty_name::<lambda>", "start": 1790077434776}], "start": 1790077434774, "stop": 1790077434776}

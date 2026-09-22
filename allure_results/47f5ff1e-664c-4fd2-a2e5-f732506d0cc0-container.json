@@ -1,0 +1,1 @@
+{"uuid": "612e97cf-c482-4f6c-bd16-3c8582c2f7e4", "children": ["bc8866ec-0ce2-4ac8-bad4-40977ab917cf"], "befores": [{"name": "mock_bun", "status": "passed", "start": 1790077434751, "stop": 1790077434752}], "afters": [{"name": "mock_bun::<lambda>", "start": 1790077434756}], "start": 1790077434751, "stop": 1790077434756}

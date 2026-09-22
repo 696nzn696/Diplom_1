@@ -132,12 +132,15 @@ class TestBurger:
     
     def test_remove_ingredient_invalid_index_error(self, burger_with_ingredients):
         burger = burger_with_ingredients
+        initial_len = len(burger.ingredients)
         with pytest.raises(IndexError):
             burger.remove_ingredient(6)
+        assert len(burger.ingredients) == initial_len
     
     def test_remove_ingredient_from_empty_list_error(self, burger):
         with pytest.raises(IndexError):
             burger.remove_ingredient(0)
+        assert burger.ingredients == []
 
     def test_move_ingredient_forward_by_one(self, burger_with_ingredients):
         burger = burger_with_ingredients
@@ -168,8 +171,11 @@ class TestBurger:
     
     def test_move_ingredient_raises_index_error_on_invalid_index(self, burger_with_ingredients):
         burger = burger_with_ingredients
+        initial_list = burger.ingredients.copy()
         with pytest.raises(IndexError):
             burger.move_ingredient(5, 0)
+        assert burger.ingredients == initial_list
+
 
     def test_get_price_correct_calculation(self, burger, mock_bun, mock_sauce, mock_filling):
         burger.set_buns(mock_bun)
@@ -203,6 +209,7 @@ class TestBurger:
     def test_get_price_without_bun_error(self, burger):
         with pytest.raises(AttributeError):
             burger.get_price()
+        assert not hasattr(burger, "bun") or burger.bun is None
 
     def test_get_receipt_success(self, burger, mock_bun, mock_filling, mock_sauce):
         burger.set_buns(mock_bun)
@@ -287,3 +294,4 @@ class TestBurger:
     def test_get_receipt_no_bun_error(self, burger):
         with pytest.raises(AttributeError): 
             burger.get_receipt()
+        assert not hasattr(burger, "bun") or burger.bun is None

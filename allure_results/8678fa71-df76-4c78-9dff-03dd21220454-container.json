@@ -1,0 +1,1 @@
+{"uuid": "9456a396-4111-45f4-b9d2-c775dc97cce0", "children": ["62addfd5-babb-48a1-8abe-eece008a66a5"], "befores": [{"name": "burger", "status": "passed", "start": 1790077434598, "stop": 1790077434598}], "afters": [{"name": "burger::<lambda>", "start": 1790077434602}], "start": 1790077434598, "stop": 1790077434602}
